@@ -290,7 +290,7 @@ class _Global_Item_Distribution_Counter(_Metrics_Object):
     def __init__(self, n_items, ignore_items):
         super(_Global_Item_Distribution_Counter, self).__init__()
 
-        self.recommended_counter = np.zeros(n_items, dtype=np.float)
+        self.recommended_counter = np.zeros(n_items, dtype=np.float64)
         self.ignore_items = ignore_items.astype(np.int).copy()
 
 
